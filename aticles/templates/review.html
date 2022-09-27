@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<form action="{% url 'articles:create_review' %}" method="POST">
+    {% csrf_token %}
+    <label for="content">보낼 메세지</label>
+    <input type="text" id="content" name="content" />
+    <input type="submit">
+</form>
+{% endblock %}

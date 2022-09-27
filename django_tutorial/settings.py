@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # 내가 추가한 앱
     'aticles',
+    'foods',
 
     # 기본 장고 앱
     'django.contrib.admin',
